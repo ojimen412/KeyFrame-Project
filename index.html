@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes Project</title>
+    <style>#splash-image {
+/*   background-color: gray; */
+  background-image: url('https://westmeccoding.github.io/Dog_Animation/dog-park.webp');
+  width: 1200px;
+  height: 800px;
+  background-size: cover;
+   position: relative;
+
+}
+h1#park-name {
+            position: relative;
+            animation: fadeIn 5s linear 1;
+            bottom: 190px;
+            color: red;
+            font-size: 5rem;
+            z-index: 1000;
+            font-style: italic;
+            font-weight: bold;
+            margin-left: 10%;
+            text-shadow:
+                -2px -2px 0 #000,
+                /* top left */
+                2px -2px 0 #000,
+                /* top right */
+                -2px 2px 0 #000,
+                /* bottom left */
+                2px 2px 0 #000,
+                /* bottom right */
+                0 -2px 0 #000,
+                /* top */
+                0 2px 0 #000,
+                /* bottom */
+                -2px 0 0 #000,
+                /* left */
+                2px 0 0 #000;
+
+        }
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+img#golden-dog {
+  position: absolute;
+  left: 640px;
+  top: 180px;
+}
+@keyframe dog{
+  0%{
+    
+  }
+  50%{
+    
+  }
+  100%{
+    
+  }
+}
+img#red-frisbee{
+  position: relative;
+  left: 620px;
+  top: 90px; 
+}
+</style>
+</head>
+<body>
+    <div id="splash-image">
+<!--   <h1 id="park-name">Good Dog Frisbee Park</h1> -->
+        <img id="red-frisbee" src="https://westmeccoding.github.io/Dog_Animation/red-frisbee.png" alt="Red Frisbee" width="240" height="190" />
+   <h1 id="park-name">Good Dog Frisbee Park</h1>
+        <img id="golden-dog" src="https://westmeccoding.github.io/Dog_Animation/dog-transparent.png" width="600" height="640" alt="Golden Dog" />
+</div>
+    <script></script>
+</body>
+</html>
